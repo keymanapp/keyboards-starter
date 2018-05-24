@@ -1,4 +1,13 @@
-# Open Source Keyman keyboards
+# Open Source Keyman keyboards starter template
+
+## Introduction
+
+This repository is designed to be used along with the instructions 
+at <https://help.keyman.com/developer/keyboards/>. It is essentially an empty template
+repository that provides just the tools and structure to allow you to submit a new keyboard 
+layout to the primary keyboards repository hosted at <https://github.com/keymanapp/keyboards>. 
+Note that if you plan to submit many keyboards, you should instead follow the instructions at 
+the first link above on how to clone the full keyboards repository.
 
 ## File Layout
 
@@ -12,6 +21,10 @@ Keyboards are grouped into three folders:
 
 Within each of the folders, keyboards are further grouped by first letter or by prefix, where 
 multiple keyboards share the same prefix indicating provenance, for example `sil` or `gff`.
+
+In most circumstances, you should create a subfolder tree for your keyboard layout under
+`release/e/example`, where _e_ and _example_ are the first initial and the full name of your
+keyboard, respectively.
 
 ## Contributing
 
@@ -65,3 +78,4 @@ new keyboard name.
    * <https://keyman.com/developer/keymanweb/keyboards.php>: Published documentation for each keyboard
    * <https://r.keymanweb.com/api/4.0/keyboards/>: JSON API for compiled keyboards available from Keyman Cloud
    * <https://help.keyman.com/developer/cloud/keyboard_info/>: Documentation on the .keyboard_info file format used in this repository
+   * <https://github.com/keymanapp/keyboards>: Primary keyboards repository.
