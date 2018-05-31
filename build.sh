@@ -3,6 +3,10 @@
 #
 # This script is built with commands available to Git Bash on Windows. (mingw32)
 #
+# This script and scripts in resources/ should be identical in the 
+# https://github.com/keymanapp/keyboards and 
+# https://github.com/keymanapp/keyboards_starter repos
+#
 
 function display_usage {
   echo "Usage: $0 [-validate] [-codesign] [-start] [-s] [-d] [-c] [-w] [-t project_target] [target]"
