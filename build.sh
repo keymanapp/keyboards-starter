@@ -17,16 +17,10 @@ function display_usage {
 # TODO: Copy the final keyboard_info.json to resources/
 
 #
-# Define paths
+# Import environment
 #
-KEYBOARDROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-KMCOMP="$KEYBOARDROOT/tools/kmcomp.exe"
 
-if [[ "${OSTYPE}" != "darwin"* ]]; then
-  KMCOMP_LAUNCHER=
-else
-  KMCOMP_LAUNCHER=wine
-fi
+. resources/env.sh
 
 # Master json schema is from https://api.keyman.com/schemas/keyboard_info.json
 KEYBOARDINFO_SCHEMA_JSON="$KEYBOARDROOT/tools/keyboard_info.source.json"
